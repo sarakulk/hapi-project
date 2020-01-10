@@ -2,10 +2,7 @@
   "ExpandedNodes": [
     "",
     "\\server",
-    "\\server\\controller\\login",
-    "\\server\\controller\\User",
-    "\\server\\services\\BlogServices"
+    "\\server\\controller"
   ],
-  "SelectedNode": "\\package.json",
   "PreviewInSolutionExplorer": false
 }

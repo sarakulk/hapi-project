@@ -7,4 +7,4 @@ var userRoute = require('./userRoutes/user')
 var blogRoute = require('./blogRoutes/blog')
 var login = require('./loginRoute/login')
 
-module.exports = { userRoute, blogRoute, login}
+module.exports = [].concat(userRoute, blogRoute, login)

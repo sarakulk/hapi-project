@@ -3,7 +3,7 @@
 require('dotenv').config()
 const hapi = require('@hapi/hapi')
 const config = require('./config/index')
-const routes = require('./routes/index')
+const routes = require('./routes')
 const db = require('./models/dbConnection')
 const inert = require('inert')
 

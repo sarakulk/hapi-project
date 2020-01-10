@@ -17,7 +17,7 @@ const init = async () => {
     await server.register(require('@hapi/vision'));
     await server.register(inert);
 
-    server.route(routes(server));
+    server.route(routes);
     db.mongoDBConnection();
 
     //Starting the server......

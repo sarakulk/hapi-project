@@ -3,7 +3,7 @@
 require('dotenv').config()
 const hapi = require('@hapi/hapi')
 const config = require('./config/index')
-const routes = require('./routes/index')
+const routes = require('./routes')
 const db = require('./models/dbConnection')
 const inert = require('inert')
 
@@ -17,7 +17,7 @@ const init = async () => {
     await server.register(require('@hapi/vision'));
     await server.register(inert);
 
-    server.route(routes(server));
+    server.route(routes);
     db.mongoDBConnection();
 
     //Starting the server......

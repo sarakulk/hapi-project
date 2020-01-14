@@ -16,7 +16,6 @@ const createBlog = async (req) => {
 		}
 		return true
 	});
-
 }
 
 const fetchBlog = async () => {
